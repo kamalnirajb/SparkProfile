@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="uivm"
+            type="com.niraj.sparkprofile.viewmodels.UserItemViewModel" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/color_white"
+        app:cardCornerRadius="@dimen/margin_10dp"
+        app:cardElevation="@dimen/dim5dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim5dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/img_dim"
+                android:layout_height="@dimen/img_dim"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:layout_toEndOf="@id/img_profile"
+                android:orientation="vertical">
+
+                <com.niraj.sparkprofile.customui.AppTextViewCFS
+                    android:id="@+id/tv_display_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dim5dp"
+                    android:text="@{uivm.user.displayName}"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fontsize_16"
+                    app:textFontFamily="@string/MYRIADPROBOLD" />
+
+                <com.niraj.sparkprofile.customui.AppTextViewCFS
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dim5dp"
+                    android:text="Item"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fontsize_14"
+                    app:textFontFamily="@string/MyRiadProRegular" />
+
+                <com.niraj.sparkprofile.customui.AppTextViewCFS
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dim5dp"
+                    android:text="Item"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fontsize_14"
+                    app:textFontFamily="@string/MyRiadProRegular" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:id="@+id/tv_ethnicity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dim5dp"
+                        android:text="Item"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fontsize_14"
+                        app:textFontFamily="@string/MyRiadProRegular" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:id="@+id/tv_religion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim5dp"
+                        android:padding="@dimen/dim5dp"
+                        android:text="Item"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fontsize_14"
+                        app:textFontFamily="@string/MyRiadProRegular" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:id="@+id/tv_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dim5dp"
+                        android:text="Item"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fontsize_14"
+                        app:textFontFamily="@string/MyRiadProRegular" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:id="@+id/tv_figure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim5dp"
+                        android:padding="@dimen/dim5dp"
+                        android:text="Item"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/fontsize_14"
+                        app:textFontFamily="@string/MyRiadProRegular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</layout>

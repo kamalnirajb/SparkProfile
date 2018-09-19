@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/color_bottom_tab"
+    app:cardElevation="@dimen/dim5dp">
+
+    <com.niraj.sparkprofile.customui.AppTextViewCFS
+        android:id="@+id/tv_picker_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim5dp"
+        android:text="Item"
+        android:textSize="@dimen/fontsize_16"
+        android:textAlignment="viewStart"
+        app:textFontFamily="@string/MyRiadProRegular"
+        android:textColor="@color/colorPrimary"/>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AppTextViewCFS">
+        <attr name="textFontFamily" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppButtonCFS">
+        <attr name="buttonFontFamily" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppSearchView">
+        <attr name="searchFontFamily" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppEditTextCFSWithButton">
+        <attr name="textButtonFontFamily" format="string"/>
+        <attr name="textButtonRightImage" format="string"/>
+        <attr name="android:inputType"/>
+        <attr name="android:maxLength"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppSpinnerView">
+        <attr name="android:prompt" />
+        <attr name="android:entries" />
+    </declare-styleable>
+
+    <declare-styleable name="AppImageSlider">
+        <attr name="sliderLayout" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="AppTextViewCFSWithImage">
+        <attr name="textImgButtonFontFamily" format="string"/>
+        <attr name="textButtonImage" format="reference"/>
+        <attr name="isLeft" format="boolean"/>
+        <attr name="android:text"/>
+        <attr name="android:inputType"/>
+        <attr name="android:maxLength" />
+    </declare-styleable>
+</resources>

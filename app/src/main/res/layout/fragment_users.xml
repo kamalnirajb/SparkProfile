@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="uvm"
+            type="com.niraj.sparkprofile.viewmodels.UserViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.UsersFragment">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.niraj.sparkprofile.customui.AppSearchView
+                    android:id="@+id/search_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim45dp"
+                    android:background="@drawable/edittext_bg"
+                    android:gravity="start|center_vertical"
+                    android:layoutMode="clipBounds"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    app:iconifiedByDefault="false"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="@string/search"
+                    app:searchFontFamily="@string/MyRiadProRegular"
+                    app:submitBackground="@color/color_white" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_users"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/background_dark"
+                    app:adapter="@{uvm.adapter}"
+                    app:data="@{uvm.usersList}"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/layout_item_user" />
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+</layout>

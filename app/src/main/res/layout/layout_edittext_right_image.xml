@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.niraj.sparkprofile.customui.AppTextViewCFS
+        android:id="@+id/tv_right_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:text="@string/fa_envelop"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontsize_20"
+        app:textFontFamily="@string/FONTAWESOME"
+        tools:ignore="RelativeOverlap"/>
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_custom_right_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tv_right_image"
+        android:background="@drawable/edittext_bg"
+        android:padding="@dimen/dim5dp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/fontsize_14"/>
+</RelativeLayout>

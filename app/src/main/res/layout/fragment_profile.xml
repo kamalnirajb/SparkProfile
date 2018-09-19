@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="uivm"
+            type="com.niraj.sparkprofile.viewmodels.UserItemViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".fragments.ProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_white"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarStyle="insideOverlay">
+
+                <LinearLayout
+                    android:id="@+id/layout_profile_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/img_dim"
+                        android:layout_height="@dimen/img_dim"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/img_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_profile" />
+
+                        <com.niraj.sparkprofile.customui.AppButtonCFS
+                            android:id="@+id/btn_edit_profile_pic"
+                            style="@style/PlainAppButton"
+                            android:layout_width="@dimen/edit_icon_dim"
+                            android:layout_height="@dimen/edit_icon_dim"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/rounded_circle_dark"
+                            android:padding="@dimen/dim5dp"
+                            android:text="@string/fa_edit"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/fontsize_25"
+                            app:buttonFontFamily="@string/FONTAWESOME" />
+
+                    </RelativeLayout>
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/display_name" />
+
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_display_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="textEmailAddress"
+                        android:text="@{uivm.user.displayName}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_envelop" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:text="@string/real_name" />
+
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_real_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="textPersonName"
+                        android:text="@{uivm.user.realName}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_user" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/birthday" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="date"
+                        android:text="@{uivm.user.birthday}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_calendar" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/gender" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.gender}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_down_arrow" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/ethnicity" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_ethnicity"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.ethnicity}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_globe" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/religion" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_religion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.religion}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_bell" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/occupation" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.religion}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_down_arrow" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/height" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.height}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_down_arrow" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/figure" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_figure"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.figure}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_down_arrow" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/marital_status" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_marital_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.maritalStatus}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_down_arrow" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/aboutme" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFS
+                        android:id="@+id/et_about_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_dim"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:background="@drawable/edittext_bg"
+                        android:gravity="start"
+                        android:hint="@string/aboutme"
+                        android:maxLength="300"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="@{uivm.user.aboutme}"
+                        android:textColorHint="@color/color_translucent"
+                        android:textSize="@dimen/fontsize_14"
+                        app:textFontFamily="@string/MyRiadProRegular" />
+
+                    <com.niraj.sparkprofile.customui.AppTextViewCFS
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="@string/location" />
+
+                    <com.niraj.sparkprofile.customui.AppEditTextCFSWithRightImage
+                        android:id="@+id/et_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim35dp"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:inputType="text"
+                        android:text="@{uivm.user.location}"
+                        app:textButtonFontFamily="@string/MyRiadProRegular"
+                        app:textButtonRightImage="@string/fa_location" />
+
+
+                    <com.niraj.sparkprofile.customui.AppButtonCFS
+                        android:id="@+id/btn_save"
+                        style="@style/PlainAppButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_30dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@color/colorPrimary"
+                        android:onClickListener="@{uivm.onClickListener}"
+                        android:text="@string/save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/fontsize_16"
+                        app:textFontFamily="@string/MyRiadProRegular" />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</layout>

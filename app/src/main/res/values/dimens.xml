@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_elevation">3dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_120dp">120dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="dim5dp">5dp</dimen>
+
+    <dimen name="fontsize_13">13sp</dimen>
+    <dimen name="fontsize_14">14sp</dimen>
+    <dimen name="fontsize_16">16sp</dimen>
+    <dimen name="fontsize_25">25sp</dimen>
+    <dimen name="fontsize_20">20sp</dimen>
+
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="dim35dp">35dp</dimen>
+    <dimen name="dim45dp">45dp</dimen>
+    <dimen name="img_dim">100dp</dimen>
+    <dimen name="edit_icon_dim">35dp</dimen>
+    <dimen name="dim25dp">25dp</dimen>
+    <dimen name="dim30dp">30dp</dimen>
+    <dimen name="fontsize_12">12sp</dimen>
+</resources>

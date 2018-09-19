@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">SparkProfile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="users">Users</string>
+    <string name="profile">Profile</string>
+
+
+    <!--Font names begins-->
+    <string name="FONTAWESOME">fonts/fontawesome.ttf</string>
+    <string name="MYRIADPROBOLD">fonts/myriadpro_bold.otf</string>
+    <string name="MyRiadProRegular">fonts/myriadpro_regular.ttf</string>
+    <string name="MyriadProSemibold">fonts/myriadpro_semibold.otf</string>
+    <string name="PTSansRegular">fonts/ptsans_regular.ttf</string>
+    <string name="PTSnsBold">fonts/ptsans_bold.ttf</string>
+    <string name="PTSnsNarrow">fonts/ptsans_narrow.ttf</string>
+    <string name="Ptsansitalic">fonts/ptsans_italic.ttf</string>
+    <string name="WorkSansLight">fonts/worksans_light.ttf</string>
+    <string name="WorkSansRegular">fonts/worksans_regular.ttf</string>
+    <string name="CabinSketchBold">fonts/cabinsketch_bold.ttf</string>
+    <string name="CabinSketchRegular">fonts/cabinsketch_regular.ttf</string>
+    <!--Font names end-->
+
+    <string name="fa_calendar">&#xf073;</string>
+    <string name="fa_envelop">&#xf0e0;</string>
+    <string name="fa_eye">&#xf06e;</string>
+    <string name="fa_eye_striked">&#xf070;</string>
+    <string name="fa_settings">&#xf013;</string>
+    <string name="fa_filter">&#xf1de;</string>
+    <string name="fa_logout">&#xf08b;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_up_arrow">&#xf077;</string>
+    <string name="fa_down_arrow">&#xf0dd;</string>
+    <string name="fa_right_arrow">&#xf054;</string>
+    <string name="fa_left_arrow">&#xf053;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_location">&#xf041;</string>
+    <string name="fa_close">&#xf00d;</string>
+    <string name="fa_delete">&#xf014;</string>
+    <string name="fa_favourite">&#xf004;</string>
+    <string name="fa_unfavourite">&#xf08a;</string>
+    <string name="fa_key">&#xf084;</string>
+    <string name="fa_edit">&#xf044;</string>
+    <string name="fa_credit_card_alt">&#xf283;</string>
+    <string name="fa_check_circle">&#xf058;</string>
+    <string name="fa_alt_share">&#xf1e1;</string>
+    <string name="fa_share">&#xf1e0;</string>
+    <string name="fa_tags">&#xf02c;</string>
+    <string name="fa_shopping_bags">&#xf290;</string>
+    <string name="fa_cutlery">&#xf0f5;</string>
+    <string name="fa_industry">&#xf275;</string>
+    <string name="fa_server">&#xf233;</string>
+    <string name="fa_info_circle">&#xf05a;</string>
+    <string name="fa_plus_square_o">&#xf196;</string>
+    <string name="fa_favourite_o">&#xf08a;</string>
+    <string name="fa_gender_icon">&#xf222;</string>
+    <string name="fa_gender_icon_male">&#xf222;</string>
+    <string name="fa_gender_icon_female">&#xf221;</string>
+    <string name="fa_gender_icon_others">&#xf224;</string>
+    <string name="fa_globe">&#xf0ac;</string>
+    <string name="fa_bell">&#xf0f3;</string>
+
+
+    <string name="display_name">Display Name</string>
+    <string name="real_name">Real Name</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="ethnicity">Ethnicity</string>
+    <string name="religion">Religion</string>
+    <string name="height">Height</string>
+    <string name="figure">Figure</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="aboutme">About me</string>
+    <string name="location">Location</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="others">Others</string>
+    <string name="search">Search</string>
+    <string name="occupation">Occupation</string>
+    <string name="display_name_empty">Please enter display name.</string>
+    <string name="real_name_empty">Please enter the real name.</string>
+    <string name="birthday_empty">Please select your birthday.</string>
+    <string name="gender_empty">Please select your gender</string>
+    <string name="ethnicity_emptry">Please select your ethnicity.</string>
+    <string name="religion_empty">Please select your religion.</string>
+    <string name="occupation_empty">Please enter your occupation.</string>
+    <string name="height_empty">Please select your height.</string>
+    <string name="figure_emptry">Please select your figure.</string>
+    <string name="marital_status_emptry">Please select your marital status</string>
+    <string name="aboutme_empty">Please tell us about you.</string>
+    <string name="location_empty">Please select the location.</string>
+
+
+</resources>
